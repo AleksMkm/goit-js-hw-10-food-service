@@ -43,6 +43,10 @@ module.exports = {
         ],
       },
       {
+        test: /\.hbs$/,
+        use: 'handlebars-loader',
+      },
+      {
         test: /\.js$/,
         enforce: 'pre',
         use: ['source-map-loader'],
